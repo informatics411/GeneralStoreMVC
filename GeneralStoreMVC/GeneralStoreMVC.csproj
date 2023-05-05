@@ -35,9 +35,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Remove="Views\Customer\" />
+    <None Remove="Services\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Customer\" />
+    <Folder Include="Services\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Models\Customers\CustomerDetailModel.cs" />

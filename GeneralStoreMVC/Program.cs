@@ -7,11 +7,14 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-var app = builder.Build();
+
 //builder.Services.AddDbContext<GeneralStoreDb>
 //    (options => options.UseSqlServer(builder.Configuration.GetConnectionString("GSLocal")));
 
 //builder.Services.AddDbContext<GeneralStoreDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("ConnectionStrings:GSLocal")));
+//builder.Services.AddScoped<ICustomerService, CustomerService>();
+
+var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
